@@ -10,7 +10,7 @@
                         @foreach ($links as $link)
                         <li class="pe-2">
                             {{ $link['text'] }}
-                            <div :class="link.active ? 'highlighted' : ''"></div>
+                            <div class="{{ $link['active'] ? 'highlighted' : ''}}"></div>
                         </li>
                         @endforeach
                     </ul>
